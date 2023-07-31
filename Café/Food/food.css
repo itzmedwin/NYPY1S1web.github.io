@@ -1,0 +1,76 @@
+.body2 {
+    background: url(../Images/backgroundfood.png) top left/ 200px no-repeat,
+    linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+/* food */ 
+#FeaturedFood{
+    text-align: center; 
+    margin-bottom: 30px;
+}
+#FeaturedFoodDesc{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.cafeteriafood{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#IceCream{
+    height: 100%;
+    padding: 30px;
+    border-radius: 3rem;
+    padding-left:5px;
+    padding-right:5px;
+}
+.IceCream{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 484px;
+    width: 400px;
+}
+.IceCream ,h2:not(#FeaturedFood), h3 ,p:not(#FeaturedFoodDesc){
+    margin-left: 30px;
+    word-wrap:break-word;
+    width: 350px;
+}
+#Donut{
+    height: 100%;
+    padding: 30px;
+    border-radius: 3rem;
+}
+.Donut{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 255px;
+    width: 350px;
+}
+.Donut h2:not(#FeaturedFood) ,h3, p:not(#FeaturedFoodDesc){
+    margin-left: 30px;
+    word-wrap:break-word;
+    width: 300px;
+}
+#Waffle{
+    height: 100%;
+    padding: 30px;
+    border-radius: 3rem;
+}
+.Waffle{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 270px;
+    width: 400px;
+}
+.Waffle h2:not(#FeaturedFood) ,h3 ,p:not(#FeaturedFoodDesc){
+    margin-left: 30px;
+    word-wrap:break-word;
+    width: 300px;
+}
+
+/* drinks*?

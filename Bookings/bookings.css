@@ -1,0 +1,148 @@
+@import url('https //fonts.googleapis.com/css family=poppins');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	outline: red-dashed 1px;
+	background-color: var(--div-background-color, rgb(225, 243, 249));
+	padding-bottom: 1px;
+	font-family: "Poppins", 'Montserrat', Helvetica, Arial, sans-serif;
+	font-size: 1.4rem;
+	color: #333;
+	overflow-x: hidden;
+	line-height: normal !important;
+}
+
+.flexbookings {
+	padding: 20px;
+	padding-left: 45px;
+	padding-right: 45px;
+	border: solid black;
+}
+
+.flexbookings>a {
+	text-decoration: none;
+	color: white;
+}
+
+.bookingshyperlink {
+	display: flex;
+	padding-right: 30px;
+	background-color: rgb(104, 104, 224);
+}
+
+.background-container {
+	background-color: rgb(176, 176, 235);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.container {
+	width: 400px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	margin-top: 10px;
+}
+
+input,
+select {
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+select {
+	width: 100%;
+}
+fieldset {
+	border: 2px solid #3498db;
+	border-radius: 8px;
+	padding: 15px;
+  }
+
+  legend {
+	color: #3498db;
+	font-size: 1.2em;
+	font-weight: bold;
+  }
+.flextiming{
+	display: flex;
+	padding-right: -10px;
+}
+.flextiming, input{
+	padding-right: auto;
+	width: 100%;
+}
+.flextiming > p{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.Availability-button {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+	background-color: white;
+  	color: #ffffff;
+}
+ .Availability-button:hover {
+	background-color: white;
+}
+
+.content {
+	margin-left: 20%;
+	margin-right: 5%;
+}
+
+caption {
+	font-weight: bold;
+	font-size: 150%;
+	margin: 20px
+}
+
+.heading {
+	font-family: Verdana;
+	color: white;
+	background-color: rgb(125, 125, 255);
+}
+
+tr:nth-child(even) {
+	background-color: rgb(164, 164, 231);
+}
+
+table {
+	border-collapse: collapse;
+	border-color: brown;
+}
+
+td,
+th {
+	padding: 1em;
+	border-color: brown;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html >
+<html>
+<head>
+<title>Feedback Form Receiver</title>
+<style>
+article {
+		font-family:Bradley Hand ITC;
+		line-height:2em;
+		font-size:1.5em;
+		padding:20px;
+		border-radius:100px 10px 100px 0px;
+		background-color:#FFFF99;
+		margin:10px auto;
+		width:500px;
+		/* -webkit-transform:skewX(-20deg); */
+}
+
+ h1 { text-align:center }
+ 
+.blank {
+	font-weight:900;
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+<!-- HIDE FROM INCOMPATIBLE BROWSERS
+	const today = new Date();
+const year = today.getFullYear();
+const month = today.getMonth() + 1; 
+const day = today.getDate();
+const resultsList = document.getElementById("results")
+
+var formData = location.search;
+formData = formData.substring(1, formData.length);
+while (formData.indexOf("+") != -1) {
+	formData = formData.replace("+", " ");
+}
+formData = unescape(formData);
+var formArray = formData.split("&");
+var para=new Array();
+var age,color,gender;
+
+function setColor(c){
+	var allBlanks=document.getElementsByClassName("blank");
+	  
+		for (i=0; i<allBlanks.length; i++)
+			allBlanks[i].style.color=c;
+}
+
+function setGender(){
+     if (age>12){
+		if (gender=="boy") 
+			document.getElementById("gender").innerHTML="man";
+		else
+			document.getElementById("gender").innerHTML="woman";
+	}			
+}
+// STOP HIDING FROM INCOMPATIBLE BROWSERS -->
+</script>
+<article>
+<h1>Hello Deep Focus visitor</h1>
+<p>Thanks for providing feedback! You are <span id="age" class="blank"><script>document.write(age)</script></span> years old 
+when you visited our site at <script>document.write(`date: ${year}-${month < 10 ? '0' : ''}${month}-${day < 10 ? '0' : ''}${day}`)</script>. 
+</p>
+<p>If you are interested to visit our physical spot, you can always check our booking page for availability and opening hours!
+or continue visiting our website at <a href="../index/index.html">Deep Focus</a></p>
+</article>
+<script>
+for (var i=0; i < formArray.length; ++i) {
+	
+	para=formArray[i].split("=");
+	
+	switch (para[0]) {
+		case "bdate": //d=para[1].split("-");
+					  //document.getElementById("bdate").innerHTML=d[2]+"/"+d[1]+"/"+d[0];
+					  dd=new Date(para[1]);
+					  document.getElementById("bdate").innerHTML=dd.toDateString();
+					  break;
+	    case "age": document.getElementById("age").innerHTML=para[1];
+					age=parseInt(para[1]);
+					break;
+		case "gender":
+					document.getElementById("gender").innerHTML=para[1];
+					gender=para[1];
+					break;
+		case "color": 
+					color=para[1];
+					break;
+		case "diploma":	
+					document.getElementById("diploma").innerHTML=para[1];
+					break;
+		case "activity":
+					document.getElementById("activity").innerHTML=para[1];
+					break;
+		case "location":
+					document.getElementById("location").innerHTML=para[1];
+					break;
+		case "contact":
+					document.getElementById("contact").innerHTML=para[1];
+					break;
+		case "email":
+					document.getElementById("email").innerHTML=para[1];
+					break;
+		case "website":
+					document.getElementById("website").innerHTML=para[1];
+					break;
+	
+    }
+	
+}
+setGender();
+setColor(color);
+setAge();
+
+</script>
+</body>
+</html>
+

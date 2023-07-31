@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bookings.css">
+  <link rel="stylesheet" href="../index/index.css">
+  <script src="bookings.js"></script>
+  <link rel="Deep Focus" href="../Images/Ferris wheel.jfif" type="image/x-icon">
+</head>
+
+<body>
+  <script src="https://kit.fontawesome.com/1bb47aea6f.js" crossorigin="anonymous"></script>
+  <div class="stickytop">
+    <div id="top">
+      <div class="spacing" style="width:600px" ;></div>
+      <p>Welcome to Deep Focus!</p>
+      <p id="contact">Customer Service Hotline: (65)1234 5678</p>
+    </div>
+    <div class="top2nd">
+      <div class="spacing" style="width:600px" ;></div>
+      <div class="logobrand">
+        <div id="logo">
+          <a href="../index/index.html" target="_self"><img src="../Images/Ferris wheel.jfif" id="logo" /></a>
+        </div>
+        <div id="brand">
+          <p>Deep</p>
+          <p style="margin-left: 30px;">Focus</p>
+        </div>
+      </div>
+      <div class="searchbar">
+        <input type="search" placeholder="Search" id="search">
+      </div>
+    </div>
+    <div class="headings">
+      <ul>
+        <li>
+          <a href="../index/index.html" target="_self">Home</a>
+        </li>
+        <li>
+          <a href="../Location/location.html" target="_self">Location</a>
+        </li>
+        <li>
+          <a href="bookings.html" target="_self">Bookings</a>
+        </li>
+        <li>
+          <a href="../Café/café.html" target="_self">Cafe</a>
+        </li>
+        <li>
+          <a href="../About/about.html" target="_self">About</a>
+        </li>
+        <li>
+          <a href="../Space/space.html" target="_self" style="visibility: visible;">Space</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  <div class="bookingshyperlink">
+    <div class="flexbookings" style="margin-left: 15%;"><a href="bookings.html" target="_self">Available spots</a>
+    </div>
+    <div class="flexbookings""><a href=" booknow.html" target="_self">Book a spot</a></div>
+    <div class="flexbookings""><a href=" feedback.html" target="_self">Feedback!</a></div>
+  </div>
+
+  <div class="background-container">
+    <div class="container">
+      <form name="booknowconfirmation" action="booknowconfirmation.html" method="get">
+        <div class="Name">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" requried>
+        </div>
+        <div class="Email">
+          <label for="email">Email:</label>
+          <input type="eamil" id="email" name="email" required>
+          <div class="Date"><label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="Timing">
+            <label for="timing">Preferred Timing:</label>
+            <div class="flextiming">
+              <input type="text" id="start-timing" name="start-timing" placeholder="0000" min="4" max="4" required>
+              <p>to:</p>
+              <input type="text" id="end-timing" name="end-timing" placeholder="0000" min="4" max="4" required>
+            </div>
+          </div>
+          <div class="venue">
+            <label for="venue">Venue:</label>
+            <select id="venue" name="venue" required>
+              <option value="" disabled selected>Select Study Spot Type</option>
+              <option value="quiet-room">Meeting Room</option>
+              <option value="cafe-style">Cafe chill spots</option>
+              <option value="two-people">Table for two</option>
+              <option value="four-people">Table for four</option>
+            </select>
+          </div>
+          <div class="Submit">
+            <input type="submit" value="submit">
+          </div>
+          <div class="Reset">
+            <input type="reset" value="reset">
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="secondbottom">
+      <div id="bottomlogo">
+        <a href="../index/index.html" target="_self"><img src="../Images/Ferris wheel.jfif" id="bottomlogo" /></a>
+      </div>
+      <div id="bottombrand">
+        <p>Deep</p>
+        <p style="margin-left: 30px;">Focus</p>
+      </div>
+      <div class="social-links">
+        <a href="https://open.spotify.com/user/ceuc0ya9cudzbtdv4nftjt19c?si=6579a77d4ef64749" target="_blank"
+          class="social-link social-link-spotify">
+          <i class="fa-brands fa-spotify fa-beat" style="color: #5bf519;"></i>
+          <span class="social-link-text">View Spotify</span>
+        </a>
+        <a href="https://github.com/itzmedwin" target="_blank" class="social-link social-link-github">
+          <i class="fa-brands fa-github fa-beat" style="color: #3b4d6d;"></i>
+          <span class="social-link-text">View GitHub</span>
+        </a>
+        <a href="https://discordapp.com/users/717372392933949473" target="_blank"
+          class="social-link social-link-discord">
+          <i class="fa-brands fa-discord fa-beat" style="color: #256de9;"></i>
+          <span class="social-link-text">View Discord</span>
+        </a>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>&copy Deep Focus Singapore, All rights reserved</p>
+    </div>
+  </div>

@@ -1,0 +1,40 @@
+.googlelocation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.googlelocationtext{
+    word-wrap: wrap;
+    padding-right: 25px;
+}
+#locationmap{
+    border-radius: 3rem;
+}
+#danieltamago{
+    text-align: center;
+    text-decoration: underline;
+}
+.videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#longvideo{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#shortvideo{
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#videosdesc{
+    text-align: center;
+}

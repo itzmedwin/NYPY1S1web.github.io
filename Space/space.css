@@ -1,0 +1,57 @@
+#studyingheader{
+    margin-left: 5%;
+}
+#studyingheader, h1, audio, p{
+    padding: 10px;
+}
+#audiotext ,span{
+    text-decoration: underline;
+}
+.audiotext{
+    display: flex;
+}
+.gridtips{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four"
+        "five";
+    padding-block: 2rem;
+    width: (min(95%, 70rem));
+    margin-inline: auto;
+    margin: 30px;
+}
+.organise {
+    font-size: 16px;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 2rem, 3.75rem, 3rem;
+}
+
+.organise:nth-child(1) {
+    grid-area: one;
+    background-color: paleturquoise;
+}
+
+.organise:nth-child(2) {
+    grid-area: two;
+    background-color: lightblue;
+}
+
+.organise:nth-child(3) {
+    grid-area: three;
+    background-color: paleturquoise;
+}
+
+.organise:nth-child(4) {
+    grid-area: four;
+    background-color: lightblue;
+}
+
+.organise:nth-child(5) {
+    grid-area: five;
+    background-color: paleturquoise;
+}

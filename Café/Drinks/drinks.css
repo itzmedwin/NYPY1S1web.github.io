@@ -1,0 +1,74 @@
+.body3 {
+    background: url(../Images/backgrounddrink.png) top left/ 200px no-repeat,
+    linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+}
+/* drinks*/
+#FeaturedDrink{
+    text-align: center; 
+    margin-bottom: 30px;
+}
+#FeaturedDrinkDesc{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.cafeteriadrinks{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#Frappe{
+    height: 100%;
+    padding: 30px;
+    border-radius: 3rem;
+    padding-left:5px;
+    padding-right:5px;
+}
+.Frappe{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 484px;
+    width: 400px;
+}
+.Frappe ,h2:not(#FeaturedDrink), h3 ,p:not(#FeaturedDrinkDesc){
+    margin-left: 30px;
+    word-wrap:break-word;
+    width: 350px;
+}
+#Coffee{
+    height: 100%;
+    padding: 30px;
+    border-radius: 3rem;
+}
+.Coffee{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 255px;
+    width: 350px;
+}
+.Coffee h2:not(#FeaturedDrink) ,h3, p:not(#FeaturedDrinkDesc){
+    margin-left: 30px;
+    word-wrap:break-word;
+    width: 300px;
+}
+#fruitpunch{
+    height: 100%;
+    padding: 30px;
+    border-radius: 3rem;
+}
+.fruitpunch{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: 270px;
+    width: 400px;
+}
+.fruitpunch h2:not(#FeaturedDrink) ,h3 ,p:not(#FeaturedDrinkDesc){
+    margin-left: 30px;
+    word-wrap:break-word;
+    width: 300px;
+}
